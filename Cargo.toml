@@ -1,0 +1,27 @@
+[package]
+name = "dumb_json_parser"
+description = "a dumb json parser, as the name suggests"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+categories.workspace = true
+keywords.workspace = true
+rust-version.workspace = true
+
+[workspace]
+members = ["examples/crate_checker", "."]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["furtidev <furtidev@tuta.io>"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/furtidev/dumb_json_parser"
+categories = ["parser-implementations"]
+keywords = ["json"]
+rust-version = "1.81"
+
+[workspace.dependencies]
+dumb_json_parser = { path = "." }
